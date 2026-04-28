@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact SEAR Systems | Demo, Pilot, Investor, and Partnership Inquiries</title>
+  <meta name="description" content="Contact SEAR Systems for pilot planning, investor conversations, partnerships, and maritime deployment discussions. Response target: 24-48 business hours." />
+  <meta name="robots" content="index,follow" />
+  <meta property="og:title" content="Contact SEAR Systems" />
+  <meta property="og:description" content="Reach SEAR for demo requests, pilot opportunities, investor discussions, and strategic partnerships." />
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="contact.html" />
+  <meta name="contact-form-endpoint" content="https://formspree.io/f/your_form_id" />
+  <link rel="canonical" href="contact.html" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@500;700;900&family=Barlow:wght@300;400;500;600&family=Barlow+Condensed:wght@400;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=20260425a" />
+</head>
+<body class="page-contact">
+  <div class="site-shell">
+    <header class="topbar">
+      <div class="nav-wrap">
+        <a class="brand" href="index.html" aria-label="SEAR Systems home">
+          <img class="brand-logo" src="images/sear-logo.png" alt="SEAR Systems logo" />
+          <span class="brand-text">S.E.A.R.</span>
+        </a>
+        <nav class="nav-links">
+          <a data-nav href="index.html">Home</a>
+          <a data-nav href="problem.html">Problem</a>
+          <a data-nav href="solution.html">Solution</a>
+          <a data-nav href="technology.html">Technology</a>
+          <a data-nav href="advantages.html">Advantages</a>
+          <a data-nav href="team.html">Team</a>
+          <a data-nav href="contact.html">Contact</a>
+        </nav>
+      </div>
+    </header>
+
+    <section class="hero">
+      <article class="hero-card">
+        <div class="kicker">Contact and Partnerships</div>
+        <h1>Start a Demo, Pilot Discussion, or Strategic Conversation.</h1>
+        <p class="lead">SEAR works with investors, incubators, maritime operators, and defense stakeholders seeking practical underwater reconnaissance capability.</p>
+        <div class="btn-row">
+          <a class="btn btn-main" href="#contact-form">Email Team</a>
+          <a class="btn btn-ghost" href="team.html">Meet Founders</a>
+        </div>
+      </article>
+      <aside class="matrix">
+        <div class="feature">
+          <div class="kicker">Email</div>
+          <h3><a href="mailto:contact.searsystems@gmail.com">contact.searsystems@gmail.com</a></h3>
+          <p>Primary inbox for partnership, pilot, and investor communication.</p>
+        </div>
+        <div class="feature">
+          <div class="kicker">Location</div>
+          <h3>Pakistan</h3>
+          <p>Building globally deployable underwater security systems.</p>
+        </div>
+        <div class="feature">
+          <div class="kicker">Stage</div>
+          <h3>Prototype Phase</h3>
+          <p>Current focus is SONAR integration and structured real-world validation.</p>
+        </div>
+        <div class="feature">
+          <div class="kicker">Funding</div>
+          <h3>Seeking Seed</h3>
+          <p>Open to strategic capital, incubation support, and pilot sponsorship partnerships.</p>
+        </div>
+      </aside>
+    </section>
+
+    <main class="page-main">
+      <h2 class="section-title">Send Us a Message</h2>
+      <div class="grid-2">
+        <article class="panel">
+          <h3>Contact Form</h3>
+          <form id="contact-form" class="contact-form" novalidate>
+            <label for="name">Full Name</label>
+            <input id="name" name="name" type="text" autocomplete="name" required />
+
+            <label for="email">Email</label>
+            <input id="email" name="email" type="email" autocomplete="email" required />
+
+            <label for="organization">Organization (Optional)</label>
+            <input id="organization" name="organization" type="text" autocomplete="organization" />
+
+            <label for="subject">Subject</label>
+            <input id="subject" name="subject" type="text" required />
+
+            <label for="reason">Reason for Inquiry</label>
+            <select id="reason" name="reason">
+              <option value="General Inquiry">General Inquiry</option>
+              <option value="Investor Discussion">Investor Discussion</option>
+              <option value="Pilot Deployment">Pilot Deployment</option>
+              <option value="Strategic Partnership">Strategic Partnership</option>
+              <option value="Media or Speaking">Media or Speaking</option>
+            </select>
+
+            <label class="trap-field" for="website" aria-hidden="true">Website</label>
+            <input class="trap-field" id="website" name="website" type="text" tabindex="-1" autocomplete="off" aria-hidden="true" />
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="6" required></textarea>
+
+            <button id="contact-submit" class="btn btn-main" type="submit">Send Message</button>
+            <p id="contact-status" class="contact-status" role="status" aria-live="polite"></p>
+            <p class="contact-meta">Typical response window: within 24-48 hours on business days.</p>
+            <p class="contact-meta">Your details are used only to respond to your inquiry and coordinate next steps.</p>
+          </form>
+        </article>
+        <article class="panel">
+          <h3>For Investors</h3>
+          <ul>
+            <li>Share fund thesis and preferred stage fit.</li>
+            <li>Outline expected ticket size and diligence timeline.</li>
+            <li>Highlight defense-tech, autonomy, or maritime alignment.</li>
+          </ul>
+          <h3>For Partners</h3>
+          <ul>
+            <li>Describe your operational use case and deployment geography.</li>
+            <li>Specify pilot scope, constraints, and target outcomes.</li>
+            <li>Include security, regulatory, and procurement requirements.</li>
+          </ul>
+        </article>
+      </div>
+    </main>
+
+    <footer class="footer">SEAR Systems <span id="year"></span>. Subsea Exploration and Autonomous Reconnaissance.</footer>
+  </div>
+  <script src="site.js?v=20260425a"></script>
+</body>
+</html>
