@@ -1,60 +1,41 @@
 # SEAR Systems
 
-SEAR Systems is a static GitHub Pages website for an affordable underwater reconnaissance and security platform. The site presents the mission, problem, solution, technology, team, and contact flow for pilot and partnership inquiries.
+SEAR Systems is a website for an affordable underwater reconnaissance and security platform. It presents the mission, problem, solution, technology, team, and contact information for the project.
 
 Live site: https://shariq-shoaib.github.io/searsystems-website/
 
-## What’s Included
+## About SEAR Systems
 
-- Mission-focused homepage with a guided story flow
-- Dedicated pages for problem, solution, technology, advantages, team, and contact
-- Responsive design with animated reveals and consistent navigation
-- Static contact form powered by Formspree
+SEAR Systems focuses on practical underwater reconnaissance for maritime missions. The platform combines sonar-led detection, semi-autonomous operation, and operator control to support safer route planning, hazard awareness, and field validation.
 
-## Contact Form
+## What the Site Shows
 
-The contact form does not use a backend or SMTP credentials. It submits safely through Formspree.
+- The core mission and value proposition
+- The underwater security problem SEAR addresses
+- The proposed solution and mission flow
+- The technology stack behind the platform
+- The team behind the project
+- The contact page for demos, pilots, and partnerships
 
-The form is connected to your inbox only: `contact.searsystems@gmail.com`.
+## Contact
 
-Configured Formspree endpoint:
-- `https://formspree.io/f/mwvagojn`
+Contact email: contact.searsystems@gmail.com
 
-Example:
-
-```html
-<meta name="contact-form-endpoint" content="https://formspree.io/f/mwvagojn" />
-```
-
-## Deployment
-
-This project is designed for GitHub Pages.
-
-GitHub Pages settings:
-1. Settings → Pages
-2. Source: Deploy from a branch
-3. Branch: `main`
-4. Folder: `/(root)`
+The contact form is powered by Formspree and sends messages directly to that inbox.
 
 ## Project Structure
 
-- [index.html](index.html)
-- [contact.html](contact.html)
-- [problem.html](problem.html)
-- [solution.html](solution.html)
-- [technology.html](technology.html)
-- [advantages.html](advantages.html)
-- [team.html](team.html)
-- [site.js](site.js)
-- [styles.css](styles.css)
-- [images/](images/)
-
-## Notes
-
-- No backend files are required.
-- No `.env` file or private SMTP credentials are used.
-- All pages use relative paths so the site works correctly on GitHub Pages.
+- index.html
+- contact.html
+- problem.html
+- solution.html
+- technology.html
+- advantages.html
+- team.html
+- site.js
+- styles.css
+- images/
 
 ## Brand Summary
 
-SEAR Systems focuses on practical underwater reconnaissance for maritime missions, combining sonar-led detection, semi-autonomous operation, and operator control to support safer route planning and field validation.
+SEAR Systems is built to communicate a focused maritime technology concept with a clean, modern presentation and clear project pages.
