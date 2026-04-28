@@ -18,14 +18,9 @@ This site uses Formspree to handle contact form submissions safely without backe
 
 Copy your form ID and update this file:
 
-In `contact.html`, find:
+In `contact.html`, the endpoint is already set to:
 ```html
-<meta name="contact-form-endpoint" content="https://formspree.io/f/your_form_id" />
-```
-
-Replace `your_form_id` with your actual ID, for example:
-```html
-<meta name="contact-form-endpoint" content="https://formspree.io/f/xyzabc123" />
+<meta name="contact-form-endpoint" content="https://formspree.io/f/mwvagojn" />
 ```
 
 ## Step 3: Commit and Deploy

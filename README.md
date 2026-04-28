@@ -1,81 +1,60 @@
-# SEAR Systems Website
+# SEAR Systems
 
-This repository is now a pure static website ready for GitHub Pages.
-The contact form uses Formspree from the frontend (no backend, no SMTP credentials, no .env secrets).
+SEAR Systems is a static GitHub Pages website for an affordable underwater reconnaissance and security platform. The site presents the mission, problem, solution, technology, team, and contact flow for pilot and partnership inquiries.
 
-## Contact Form Setup (Formspree)
+Live site: https://shariq-shoaib.github.io/searsystems-website/
 
-1. Create a form at Formspree and connect your inbox email.
-2. Copy your endpoint in the format:
-   - https://formspree.io/f/your_real_form_id
-3. Open `contact.html` and update:
-   - `<meta name="contact-form-endpoint" content="https://formspree.io/f/your_real_form_id" />`
-4. Commit and deploy.
+## What’s Included
 
-Notes:
-- Formspree endpoint IDs are safe to place in frontend code.
-- No SMTP password or private keys are stored in this project.
+- Mission-focused homepage with a guided story flow
+- Dedicated pages for problem, solution, technology, advantages, team, and contact
+- Responsive design with animated reveals and consistent navigation
+- Static contact form powered by Formspree
 
-## Local Preview
+## Contact Form
 
-Open `index.html` in a browser, or use any static server.
+The contact form does not use a backend or SMTP credentials. It submits safely through Formspree.
 
-## GitHub Pages Deployment
+The form is connected to your inbox only: `contact.searsystems@gmail.com`.
 
-1. Push this repository to GitHub.
-2. In GitHub repo settings:
-   - Settings -> Pages
-   - Build and deployment -> Source: Deploy from a branch
-   - Branch: main
-   - Folder: /(root)
-3. Save and wait for deployment.
+Configured Formspree endpoint:
+- `https://formspree.io/f/mwvagojn`
 
-## Exact Git Commands
+Example:
 
-Run these commands in project root:
+```html
+<meta name="contact-form-endpoint" content="https://formspree.io/f/mwvagojn" />
+```
 
-1. Initialize repository
-   - git init
-2. Set default branch
-   - git branch -M main
-3. Stage files
-   - git add .
-4. First commit
-   - git commit -m "Convert site to static GitHub Pages with Formspree contact form"
-5. Add GitHub remote
-   - git remote add origin https://github.com/YOUR_USERNAME/YOUR_REPO.git
-6. Push to GitHub
-   - git push -u origin main
+## Deployment
 
-If remote already exists:
-- git remote set-url origin https://github.com/YOUR_USERNAME/YOUR_REPO.git
+This project is designed for GitHub Pages.
 
-## Pre-Deployment Checklist (GitHub Pages)
+GitHub Pages settings:
+1. Settings → Pages
+2. Source: Deploy from a branch
+3. Branch: `main`
+4. Folder: `/(root)`
 
-- `index.html` exists at repository root.
-- All links and asset paths are relative (no leading slash paths for local files).
-- No backend runtime files are required.
-- No `.env` or secrets are committed.
-- Contact endpoint in `contact.html` is set to your real Formspree form ID.
+## Project Structure
 
-## Final Production Structure
+- [index.html](index.html)
+- [contact.html](contact.html)
+- [problem.html](problem.html)
+- [solution.html](solution.html)
+- [technology.html](technology.html)
+- [advantages.html](advantages.html)
+- [team.html](team.html)
+- [site.js](site.js)
+- [styles.css](styles.css)
+- [images/](images/)
 
-Expected static structure:
+## Notes
 
-- index.html
-- contact.html
-- problem.html
-- solution.html
-- technology.html
-- advantages.html
-- team.html
-- site.js
-- styles.css
-- README.md
-- .gitignore
-- images/
-  - sear-logo.png
-  - AliMurtaza.jpg
-  - Safwan.jpeg
-  - Shariq.jpeg
-  - Okasha.jpeg
+- No backend files are required.
+- No `.env` file or private SMTP credentials are used.
+- All pages use relative paths so the site works correctly on GitHub Pages.
+
+## Brand Summary
+
+SEAR Systems focuses on practical underwater reconnaissance for maritime missions, combining sonar-led detection, semi-autonomous operation, and operator control to support safer route planning and field validation.

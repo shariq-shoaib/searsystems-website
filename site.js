@@ -1,6 +1,6 @@
 (function () {
   const CONTACT_FALLBACK_EMAIL = "contact.searsystems@gmail.com";
-  const DEFAULT_CONTACT_ENDPOINT = "https://formspree.io/f/your_form_id";
+  const DEFAULT_CONTACT_ENDPOINT = "https://formspree.io/f/mwvagojn";
 
   const toastRoot = document.createElement("div");
   toastRoot.className = "toast-stack";
@@ -97,20 +97,20 @@
       }
 
       const endpoint = resolveContactEndpoint();
-      if (endpoint.includes("your_form_id")) {
-        throw new Error("Contact form is not configured yet. Add your Formspree form endpoint in contact.html.");
-      }
-
       const controller = new AbortController();
       const timeoutRef = setTimeout(() => controller.abort(), 15000);
+
+      const submission = new FormData();
+      Object.entries(payload).forEach(([key, value]) => {
+        submission.append(key, value);
+      });
 
       const response = await fetch(endpoint, {
         method: "POST",
         headers: {
-          "Content-Type": "application/json",
           Accept: "application/json",
         },
-        body: JSON.stringify(payload),
+        body: submission,
         signal: controller.signal,
       });
       clearTimeout(timeoutRef);
